@@ -1,13 +1,20 @@
 import './global.css'
-import Navbar from './components/home/nav bar/navbar'
-import SearchPokemon from './components/pokedex/searchpokemon'
-function App() {
 
+import React from "react";
+
+
+import { Outlet } from "react-router-dom"
+import NavBar from './components/navbar';
+
+function App() {
+ 
 
   return (
     <>
-      <Navbar/>
-      <SearchPokemon/>   
+      <NavBar/>
+      <div className="container">
+        <Outlet />
+      </div>
     </>
   )
 }
