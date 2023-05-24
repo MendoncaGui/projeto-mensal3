@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <div className="container">
+      <div className="main">
         <Outlet />
       </div>
     </>
