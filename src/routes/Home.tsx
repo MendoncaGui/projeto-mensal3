@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './index.module.css'
 import banner from '../assets/img/banner.png'
 import { Link } from 'react-router-dom'
+import Footer from '../components/footer/footer'
+
 
 const home = () => {
   return (
@@ -21,22 +23,7 @@ const home = () => {
               </div>
             </div>
           </div>
-          <div className="row g-0 align-items-center">
-            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-7">
-              <div className={styles.div_text}>
-                <h3>
-                  Make with ❤️ for the PokéSpartans team Platzi Master
-                </h3> 
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-5 text-end">
-              <div className={styles.div_text}>
-                <h3 className={styles.div_footer}>
-                  Our team
-                </h3> 
-              </div>
-            </div>
-          </div>
+          <Footer/>
         </div>
   )
 }
