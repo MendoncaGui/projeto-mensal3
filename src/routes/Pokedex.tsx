@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../components/footer/footer';
+import styles from './index.module.css'
 
 interface Pokemon {
   name: string;
@@ -108,6 +110,9 @@ const Home = () => {
           ))}
         </div>
       )}
+      <div className={`container-fluid g-0 ${styles.div_footer}`}>
+            <Footer/>
+        </div>
     </div>
   );
 };

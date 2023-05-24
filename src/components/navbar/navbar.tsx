@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, NavLink, useLocation} from 'react-router-dom'
 
 import styles from './index.module.css'
-import logo from '../assets/img/Logo.png'
+import logo from '../../assets/img/Logo.png'
 
 /*
 const NavBar = () => {
@@ -47,7 +47,7 @@ const NavBar = () => {
         </ul>
       </div>
     </div>
-</nav>
+  </nav>
   )
 }
 
