@@ -1,5 +1,6 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, NavLink, useLocation} from 'react-router-dom'
+
 import styles from './index.module.css'
 import logo from '../assets/img/Logo.png'
 
@@ -21,6 +22,10 @@ const NavBar = () => {
 }*/
 
 const NavBar = () => {
+  const location = useLocation();
+  const isLinkActive = (linkUrl: string) => {
+    return location.pathname === linkUrl;
+  };
   return (
   <nav className="navbar navbar-expand-lg bg-warning">
     <div className="container">
@@ -28,16 +33,16 @@ const NavBar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul className="navbar-nav justify-content-end">
           <li className="nav-item">
-            <Link className="nav-link active" to={'/'}>Home</Link>
+            <NavLink className={`nav-link ${isLinkActive('/') ? 'active' : ''}`} to={'/'}>Home</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={'/pokedex'}>Pokedex</Link>
+            <NavLink className={`nav-link ${isLinkActive('/pokedex') ? 'active' : ''}`} to={'/pokedex'}>Pokedex</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={'/legendaries'}>Legendaries</Link>
+            <NavLink className={`nav-link ${isLinkActive('/legendaries') ? 'active' : ''}`} to={'/legendaries'}>Legendaries</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={'/documentation'}>Documentation</Link>
+            <NavLink className={`nav-link ${isLinkActive('/documentation') ? 'active' : ''}`} to={'/documentation'}>Documentation</NavLink>
           </li>
         </ul>
       </div>
