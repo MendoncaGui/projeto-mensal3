@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './index.module.css'
 import banner from '../assets/img/banner.png'
 import { Link } from 'react-router-dom'

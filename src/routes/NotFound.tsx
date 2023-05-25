@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './index.module.css'
 import rocket from '../assets/img/Team_Rocket.png'
 import notfound from '../assets/img/404.png'

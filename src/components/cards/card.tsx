@@ -1,7 +1,6 @@
-import * as React from 'react';
 import styles from './index.module.css'
 
-export default function PokemonCard({name, image, types, stats, typeClass}) {
+export default function PokemonCard({name , image, types, stats, typeClass}) {
   var typeClassName = typeClass[0].type.name;
   const typeHandler  = () =>{
       var typeHandlerArr = [];
