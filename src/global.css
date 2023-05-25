@@ -12128,3 +12128,56 @@ textarea.form-control-lg {
   margin-inline: 27px;
 }
 
+.card-img-pokemon{
+  min-height: 120px;
+  border-radius: 0px 8px 8px 0;
+}
+.bg-grass{
+  background: linear-gradient(270deg, #64D368 0.15%, #64D368 70.88%);
+}
+.bg-fire{
+  background: linear-gradient(270deg, #B33327 0.15%, #D93E30 100%);
+}
+
+.bg-water{
+  background: linear-gradient(270deg, #5BC7FA 0.15%, #35BAFF 100%);
+}
+
+.bg-electric{
+  background: linear-gradient(270deg, #F2CB07 0.15%, #F2B807 100%);
+}
+
+.bg-ghost{
+  background-color: var(--bs-purple);
+}
+
+.bg-fighting{
+  background-color: #666;
+}
+
+.bg-poison{
+  background-color: purple;
+}
+
+.bg-bug{
+  background-color: greenyellow;
+}
+
+.bg-normal{
+  background-color: white;
+}
+.bg-rock{
+  background-color: steelblue;
+}
+
+.bg-psychic{
+  background-color: var(--bs-blue);
+}
+
+.bg-ground{
+  background-color: brown;
+}
+
+.bg-fairy{
+  background: linear-gradient(270deg, #F89EAE 0.15%, #F4B5C1 100%);
+}

@@ -7,6 +7,7 @@ import Home from './routes/Home.tsx'
 import Pokedex from './routes/Pokedex.tsx'
 import Legendaries from './routes/Legendaries.tsx'
 import Documentation from './routes/Documentation.tsx'
+import NotFound from './routes/NotFound.tsx'
 
 //páginas
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/Documentation",
         element: <Documentation/>
+      },
+      {
+        path: "*", // Rota curinga para corresponder a qualquer caminho
+        element: <NotFound /> // Componente para exibir a página de erro 404
       }
     ]
   }
