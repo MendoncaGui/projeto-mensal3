@@ -38,7 +38,7 @@ export default function PokemonCard({name , image, types, stats, typeClass}) {
               </div>
             </div>
             <div className={styles.div_labels}>
-            {typeHandler().map((handler, key) => 
+            {typeHandler().map((handler) => 
               <span className={`badge mx-3 bg-${handler}`}>{handler}</span>
             )}
             </div>
