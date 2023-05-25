@@ -1,8 +1,7 @@
-import { Card, Container, Grid } from '@mui/material'
+
 import React, { useEffect, useState } from 'react'
 import PokemonCard from '../components/cards/card'
 import axios from 'axios'
-import Footer from '../components/footer/footer'
 import styles from './index.module.css'
 import { Pokemon } from '../components/interface/interface'
 import { Species  } from '../components/interface/interfaceLendario'
@@ -12,7 +11,7 @@ const Pokedex = () => {
         getPokemons()
     })
 
-    const [pokemon, setPokemon] = useState<Pokemon[]>([]);
+    //const [pokemon, setPokemon] = useState<Pokemon[]>([]);
     const [pokemons, setPokemons] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [foundPokemon, setFoundPokemon] = useState<Pokemon | null>(null);
@@ -33,7 +32,7 @@ const Pokedex = () => {
         const speciesResponse = await axios.get(data.species.url);
         const speciesData: Species = speciesResponse.data;
         const isLegendary = speciesData.is_legendary;
-        const typeClassName = data.types[0].type.name;
+        //const typeClassName = data.types[0].type.name;
         setFoundPokemon({ ...data, isLegendary });
       } catch (error) {
         console.log(error);
