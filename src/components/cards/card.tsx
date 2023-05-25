@@ -53,20 +53,4 @@ export default function PokemonCard({name, image, types, stats, typeClass}) {
   );
 }
 
-/*
-<Card sx={{ maxWidth: 200 }}>
-      <CardMedia
-        sx={{ height: 180 }}
-        image={image}
-        title=""
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          
-        </Typography>
-      </CardContent>
-    </Card>*/
 
