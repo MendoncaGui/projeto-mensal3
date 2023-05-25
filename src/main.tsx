@@ -30,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/Documentation",
         element: <Documentation/>
+      },
+      {
+        path: "*", // Rota curinga para corresponder a qualquer caminho
+        element: <NotFound /> // Componente para exibir a página de erro 404
       }
     ]
   }
