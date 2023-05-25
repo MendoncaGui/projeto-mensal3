@@ -7,6 +7,7 @@ import Home from './routes/Home.tsx'
 import Pokedex from './routes/Pokedex.tsx'
 import Legendaries from './routes/Legendaries.tsx'
 import Documentation from './routes/Documentation.tsx'
+import NotFound from './routes/NotFound.tsx'
 
 //páginas
 
