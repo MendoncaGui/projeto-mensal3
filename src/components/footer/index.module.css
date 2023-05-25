@@ -1,0 +1,15 @@
+.div_text{
+    padding-left: 7rem;
+}
+
+.div_text h3{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.div_footer{
+    padding-left: 11rem;
+}

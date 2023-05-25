@@ -1,0 +1,58 @@
+.bg_pikachu{
+    background: linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
+}
+
+.title{
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.title span{
+    font-weight: 400;
+}
+
+.div_img{
+    width: 100%;
+    padding: .5rem 0 .5rem 2rem;
+    text-align: end;
+}
+
+.div_img img{
+    max-width: 700px;
+}
+
+.div_text{
+    width: 100%;
+    padding: .5rem 0 .5rem 9rem;
+    text-align: start;
+}
+
+.div_text h2{
+    color: #000000;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 50px 0;
+}
+
+.btn_home{
+    color: #000;
+    width: 231px;
+    height: 66px;
+    text-align: center;
+    background: #73D677;
+    box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 11px;
+    border: 0;
+    padding-top: .75rem;
+}
+
+.div_footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.background_notfound{
+    background: #D93E30;
+}

@@ -1,11 +1,20 @@
 import './global.css'
-import Navbar from './components/home/nav bar/navbar'
-function App() {
 
+import React from "react";
+
+
+import { Outlet } from "react-router-dom"
+import NavBar from './components/navbar/navbar';
+
+function App() {
+ 
 
   return (
     <>
-      <Navbar/>   
+      <NavBar/>
+      <div className="main">
+        <Outlet />
+      </div>
     </>
   )
 }
