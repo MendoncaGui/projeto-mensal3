@@ -22,7 +22,7 @@ const Pokedex = () => {
         for(var i = 1 ; i<100 ; i++){
             endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`);
         }
-        let response = axios.all(endpoints.map((endpoint) => axios.get(endpoint))).then((res) => setPokemons(res));
+        axios.all(endpoints.map((endpoint) => axios.get(endpoint))).then((res) => setPokemons(res));
     };
 
     const getPokemonDetails = async (name: string) => {
